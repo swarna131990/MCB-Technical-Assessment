@@ -1,0 +1,39 @@
+Question 6
+
+select substr(to_char
+
+(SUPP_CONTACT_NUMBER),1,3)||'-'||
+        substr(to_char
+
+(SUPP_CONTACT_NUMBER),4,7)||''|| substr(to_char
+
+(SUPP_CONTACT_NUMBER),10,5) ||'-'||
+        substr(to_char(SUPP_CONTACT_NUMBER),4,7)
+
+contact FRom XXBCM_ORDER_MGT;
+
+
+
+MONTHS_BETWEEN( DATE '2017-01-01', DATE '2017-08-
+
+31' )
+
+Answer below:
+
+SELECT SUPPLIER_NAME,SUPP_CONTACT_NAME, 
+
+ORDER_LINE_AMOUNT, TO_NUMBER(ORDER_TOTAL_AMOUNT, 
+
+'99,999,990.00') ORDER_TOTAL_AMOUNT,substr(to_char
+
+(SUPP_CONTACT_NUMBER),1,3)||'-'||
+        substr(to_char
+
+(SUPP_CONTACT_NUMBER),4,7)||''|| substr(to_char
+
+(SUPP_CONTACT_NUMBER),10,5) ||'-'||
+        substr(to_char(SUPP_CONTACT_NUMBER),4,7)
+
+contact,  MONTHS_BETWEEN( DATE '2017-01-01', DATE 
+
+'2017-08-31' ) FROM XXBCM_ORDER_MGT;
